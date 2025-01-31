@@ -1,0 +1,53 @@
+body {
+    margin: o;
+    padding: 0;
+    background-color: aquamarine;
+    /* the body of the background is aqua */
+}
+#grid-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 15% 70% 15%;
+    grid-template-areas: 
+    " header header header"
+    "left main right"
+    "footer footer footer";
+    min-height: 100vh;
+}
+#header {
+    grid-area: header;
+    background-color: rgb(55, 173, 228);
+    color: black;
+    text-align: center;
+    font-size: 40px;
+    /* the head title color is blue with the text color being black and text being align into center */
+}
+#main {
+    grid-area: main; 
+    /* everything thats going into the console */
+}
+#orderDisplay {
+    border: 4px solid rgb(95, 214, 80);
+    min-height: 60px; 
+    /* I have border box color orange with a height of 60 px */
+}
+#grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 30px 50px;
+    gap: 6px;
+    /* the container has 4 rows */
+}
+.grid-item {
+    padding: 30px;
+    background-color: rgb(102, 102, 165);
+    color: rgb(158, 196, 240);
+    text-align: center;
+    cursor: pointer;
+    border-radius: 140px;
+    border: none;
+    /* I have all the numbers aligned to the center */
+}
+#orderScreen {
+    margin: 5vh 5vw;
+}

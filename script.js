@@ -39,6 +39,11 @@ function clr(num1, num2) {
     /* this function is a clear button to clear the number after you enter a calculation */
 }
 
+/********* sqaureroot function ********/
+function squareRoot(num1) { 
+    return Math.sqrt(num1);
+}
+
 /********************** calculate function  *********************/
 function calculate() {
     let num2 = parseInt(userInput);
@@ -55,6 +60,9 @@ function calculate() {
             break;
         case '/':
              orderDisplay.innerHTML = divide(num1, num2);
+            break;
+        case '√':
+            orderDisplay.innerHTML = squareRoot(num1);
             break;
             /* this function is going to add,subtract,multiply, and divide the numbers */
     }

@@ -44,6 +44,18 @@ function squareRoot(num1) {
     return Math.sqrt(num1);
 }
 
+
+/********** square function  ********/
+function square(num1) {
+    return Math.pow(num1, 2)
+}
+
+
+/********** percentage function ********/
+function calculatePercentage(num1, num2) {
+    return (num1 * num2) / 100; 
+}
+
 /********************** calculate function  *********************/
 function calculate() {
     let num2 = parseInt(userInput);
@@ -64,6 +76,13 @@ function calculate() {
         case '√':
             orderDisplay.innerHTML = squareRoot(num1);
             break;
+        case 'x2':
+        orderDisplay.innerHTML = square(num1);
+            break;
+            case '%':
+        orderDisplay.innerHTML = percantage(num1, num2);
+            break;
+        
             /* this function is going to add,subtract,multiply, and divide the numbers */
     }
 }

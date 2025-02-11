@@ -80,7 +80,7 @@ function calculate() {
         orderDisplay.innerHTML = square(num1);
             break;
             case '%':
-        orderDisplay.innerHTML = percantage(num1, num2);
+        orderDisplay.innerHTML = calculatePercentage(num1, num2);
             break;
         
             /* this function is going to add,subtract,multiply, and divide the numbers */
